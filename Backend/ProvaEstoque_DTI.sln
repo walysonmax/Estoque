@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Domain", "00-Domain", "{32AC498A-81D3-4A05-8578-815EBC15D8E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-API", "01-API", "{8F50E03A-38D9-4F8D-AB16-AFB40B89533C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Repository", "02-Repository", "{94A5D08F-CB16-499C-B7E3-4CA83040E3F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvaEstoque_DTI.Domain", "ProvaEstoque_DTI.Domain\ProvaEstoque_DTI.Domain.csproj", "{9699902B-99C0-4A29-929B-DEB67AC7ED79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvaEstoque_DTI.API", "ProvaEstoque_DTI.API\ProvaEstoque_DTI.API.csproj", "{029A3A4F-D9CE-4313-B839-857B7F4BAA0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvaEstoque_DTI.Repository", "ProvaEstoque_DTI.Repository\ProvaEstoque_DTI.Repository.csproj", "{BF815121-35AA-4950-8279-8224BF3C157F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9699902B-99C0-4A29-929B-DEB67AC7ED79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9699902B-99C0-4A29-929B-DEB67AC7ED79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9699902B-99C0-4A29-929B-DEB67AC7ED79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9699902B-99C0-4A29-929B-DEB67AC7ED79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029A3A4F-D9CE-4313-B839-857B7F4BAA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029A3A4F-D9CE-4313-B839-857B7F4BAA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029A3A4F-D9CE-4313-B839-857B7F4BAA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029A3A4F-D9CE-4313-B839-857B7F4BAA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF815121-35AA-4950-8279-8224BF3C157F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF815121-35AA-4950-8279-8224BF3C157F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF815121-35AA-4950-8279-8224BF3C157F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF815121-35AA-4950-8279-8224BF3C157F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9699902B-99C0-4A29-929B-DEB67AC7ED79} = {32AC498A-81D3-4A05-8578-815EBC15D8E9}
+		{029A3A4F-D9CE-4313-B839-857B7F4BAA0F} = {8F50E03A-38D9-4F8D-AB16-AFB40B89533C}
+		{BF815121-35AA-4950-8279-8224BF3C157F} = {94A5D08F-CB16-499C-B7E3-4CA83040E3F8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D674B65-42E2-4CF4-8BA4-FCD2770240D2}
+	EndGlobalSection
+EndGlobal
