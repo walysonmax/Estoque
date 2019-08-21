@@ -6,18 +6,27 @@ import { AppComponent } from './app.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ProductService } from './services/product.service';
+import { HomeComponent } from './component/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import { ProductComponent } from './component/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
