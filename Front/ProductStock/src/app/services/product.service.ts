@@ -18,18 +18,18 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
 
-  get() {   
-    return this.http.get<Product>(environment.endpointProduct , this.httpOptions)
+  get() {
+    return this.http.get<Product>(/*environment.endpointProduct */ '/api/product', this.httpOptions)
       .pipe(
         catchError(this.handleError('get', []))
-      )
+      );
   }
 
-  getById(id: string) {   
+  getById(id: string) {
 
     // let params = new HttpParams().set('id', id);
 
-    return this.http.get<Product>(environment.endpointProduct + '/' + id, this.httpOptions)
+    return this.http.get<Product>('/api/product' + '/' + id, this.httpOptions)
       .pipe(
         catchError(this.handleError('getById', []))
       )
@@ -37,7 +37,7 @@ export class ProductService {
 
   post(product: Product) {
 
-    return this.http.post(environment.endpointProduct , product, this.httpOptions)
+    return this.http.post('/api/product' , product, this.httpOptions)
       .pipe(
         catchError(this.handleError('post', []))
       )
@@ -47,7 +47,7 @@ export class ProductService {
   delete(id: number) {
 
 
-    return this.http.delete(environment.endpointProduct + '/' + id, this.httpOptions)
+    return this.http.delete('/api/product' + '/' + id, this.httpOptions)
       .pipe(
         catchError(this.handleError('delete', []))
       )
@@ -56,7 +56,7 @@ export class ProductService {
 
   put(id: number, product: Product) {
 
-    return this.http.put(environment.endpointProduct + '/' + id, product, this.httpOptions)
+    return this.http.put('/api/product'+ '/' + id, product, this.httpOptions)
       .pipe(
         catchError(this.handleError('delete', []))
       )

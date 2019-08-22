@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  endpointProduct: ''
+  endpointProduct: 'http://localhost:65329/api/product'
 };
 
 /*

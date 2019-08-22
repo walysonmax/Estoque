@@ -1,1 +1,40 @@
-<p>product works!</p>
+<form [formGroup]="productForm" (ngSubmit)="save()">
+
+  <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="3%" fxLayoutAlign="center">
+    <div fxFlex="33%">
+      <mat-form-field>
+        <input matInput required [(ngModel)]="product.name" placeholder="Name" name="name" type="text"
+          formControlName="name" />
+      </mat-form-field>
+      <div *ngIf="submitted && f.name.errors">
+        <mat-error *ngIf="f.name.errors.required">*Name is required</mat-error>
+      </div>
+
+    </div>
+    <div fxFlex="33%">
+      <mat-form-field>
+        <input matInput required formControlName="price" [(ngModel)]="product.price" placeholder="Price" name="price"
+          type="text" />
+      </mat-form-field>
+      <div *ngIf="submitted && f.price.errors">
+        <mat-error *ngIf="f.price.errors.required">*Price is required</mat-error>
+      </div>
+
+    </div>
+    <div fxFlex="33%">
+      <mat-form-field>
+        <input matInput required formControlName="amount" [(ngModel)]="product.amount" placeholder="Amount"
+          name="amount" type="text" />
+      </mat-form-field>
+      <div *ngIf="submitted && f.amount.errors">
+        <mat-error *ngIf="f.amount.errors.required">*Amount is required</mat-error>
+      </div>
+
+    </div>
+
+  </div>
+
+  <button mat-flat-button color="primary">Save</button>
+  <a (click)="close()" mat-button>Cancel</a>
+
+</form>

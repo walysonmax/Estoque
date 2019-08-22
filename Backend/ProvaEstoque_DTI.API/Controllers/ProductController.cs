@@ -38,6 +38,7 @@ namespace ProvaEstoque_DTI.API.Controllers
             Product product = new Product();
             product.Name = productRequest.Name;
             product.Amount = productRequest.Amount;
+            product.Price = productRequest.Price;
 
             await unitOfWork.Repository<Product>().CreateAsync(product);
 

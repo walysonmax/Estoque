@@ -1,6 +1,6 @@
 export class Product {
-    public Name: string;
-    public Price: number;
-    public Amount: number;
-    public Identifier: number;
+    public name: string;
+    public price: number;
+    public amount: number;
+    public identifier: number;
 }
